@@ -1,0 +1,27 @@
+@media screen and (max-widht: 760px){ /*o site vai alterar quando chegar a 760 pixels de tamanho*/
+    
+    header{
+        flex-direction: column; /*vai ficar em coluna*/
+    }
+
+    main{
+        flex-direction: column;
+    }
+
+    h2{
+        font-size: 38px;
+    }
+
+    form{
+        margin: 0 auto; /*form no meio*/
+        width: 100%;
+    }
+
+    input{
+        align-self: center; /*ele mesmo alinhado*/  
+    }
+
+    ul{
+        text-align: center;
+    }
+}

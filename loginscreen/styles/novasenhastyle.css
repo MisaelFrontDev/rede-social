@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+    font-family: poppinsblack;
+}
+
+.banner-logo{
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    align-items: flex-start;
+    background: #0e0e0e;
+
+}
+
+.banner-logo >h1 {
+    color: #f21847;
+    font-size: 2vw;
+    text-transform: uppercase;
+    padding: 0px 10px;
+}
+
+
+.tela-alterar-senha{
+    width: 100vw;
+    height: 100vh;
+    background: #1e1e1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-nova-senha{
+    width: 36%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 20px;
+    background: #222222;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+
+}
+
+h2{
+    font-family: poppinslight;
+    color: white;
+}
+
+
+hr{
+    width: 100%;
+}
+
+p{
+    font-family: poppinslight;
+    color: white;
+}
+
+.textfield{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.textfield >input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #0e0e0e;
+    color: #90949c;
+    font-size: 12px;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield > input::placeholder{
+    color: #90949c;
+}
+
+

@@ -1,0 +1,161 @@
+
+body{
+    margin: 0;
+    font-family: poppinsblack;
+}
+
+.main-login{ /*organizar layout*/
+    width: 100vw; /*100% a largura do monitor*/
+    height: 100vh; /*100% o tamanho do monitor*/
+    background: #1e1e1e;
+    display: flex; /*faz com que as coisas fiquem lado a lado*/
+    justify-content: center;/*justify-content trabalha com itens na horizontal(linhas)*/
+    align-items: center; /*align-items trabalha com itens na vertical(de lado)*/
+}
+
+.left-login{ /*tamanhos para o lado esquerdo*/
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-login > h1{ /*Titulo*/
+    color: #f21847;
+    font-size: 3vw;
+    text-transform: uppercase;
+    
+}
+
+.left-login-image{
+    width: 35vw;
+    
+    
+}
+
+.right-login{ /*tamanhos para o lado direito*/
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login{
+    width: 60%; /*ele pega o tamanho da div q esta o card login, que tem 50vh, e vai pegar 60% desses 50.*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;/*redireciona a flex, ao inves de ficar do lado do outro ficam em coluna.*/
+    padding: 30px 35px; /*pra funilar mais pro centro, nesse caso vertical tem 30px(cima e baixo) e 35px horizontal(esquerda e direita).*/
+    background: #222222; /*backgroud da cor ao .card-login*/
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056; /*primeiro eixo x(horizontal), segundo eixo y(vertical)*/
+/*primeira valor e para eixo horizontal, segundo e para vertical. pra saber qual posicao a sombra vai.
+o terceiro valor e para o blur, e o quarto e a nossa cor*/
+
+}
+
+
+.textfield{
+    width: 100%;
+    display: flex;
+    flex-direction: column; /*flex-direction reverte o align-items e justify-content <<<<<<<<<<<----!!!!*/
+    align-items: flex-start;
+    justify-content: center;
+    /*aqui align esta na horizontal e foi pro canto esquerdo
+    enquanto justify esta na vertical e foi no centro
+    alinhando corretamente o textfield do login*/
+    margin: 10px 0px;
+
+}
+
+.textfield > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #0e0e0e;
+    color: #90949c;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none; /*tira as bordas do input <<<<<<<<<<<<<<<*/
+    box-sizing: border-box; /*corrigir o input utrapassar a box, isso div filho jamais ultrassa a div pai*/
+}
+
+.textfield > label{
+    color: #90949c;
+    margin-bottom: 10px; /*margem para baixo*/
+}
+
+.textfield > input::placeholder{
+    color: #90949c;
+}
+
+.btn-login{
+    width: 56%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none; /*tirar borda*/
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+     /*letter-spacing: 3px; espacamento das letras*/
+    color: #ffffff;
+    background: #f21847;
+    cursor: pointer; /*passar o mouse emcima e aparecer a mao de clicar*/
+    box-shadow: 0px 10px 33px -17px #ff6586; /*esse -17 da um brilho a mais O_O*/
+}
+
+.btn-login:hover{
+    background: #cc0e37;
+    box-shadow: 0px 10px 31px -17px #f32552;
+    transition: 0.3s all;
+}
+
+.new-password{
+    color: #ffffff;
+    text-decoration: none; /*remove tracinho dos links*/
+    font-family: poppinslight;
+    font-size: 14px;
+}
+
+.new-password:hover{
+    text-decoration: underline;
+}
+
+hr{ /* linha */
+    width: 80%;
+}
+
+.btn-register{
+    font-family: poppinslight; /*Comeco alteracao fonte botao*/
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;/*FIM altr fonte botao*/
+    width: 56%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800; /*engrossa a fonte*/
+      /*letter-spacing: 3px; espacamento das letras*/
+    color: white;
+    background: #42b72a;
+    cursor: pointer;
+    box-shadow: 0px 10px 31px -17px #85e97c;
+}
+
+
+
+.btn-register:hover{
+    background: #30a119;
+    box-shadow: 0px 10px 33px -17px #3fc524;
+    transition: 0.3s;
+}
+
